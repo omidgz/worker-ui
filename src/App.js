@@ -19,7 +19,7 @@ function App() {
         });
     }
 
-    const interval = setInterval(fetchData, 5000);
+    const interval = setInterval(fetchData, 500);
 
     return () => clearInterval(interval);
   }, []);
