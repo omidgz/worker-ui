@@ -34,7 +34,7 @@ function App() {
       .then((l) => {
         const ll = l.split(/\r?\n/)
         setList(ll)
-        setName(ll[ Math.floor(Math.random() * ll.length)-1])
+        setName(ll[Math.floor(Math.random() * ll.length - 1)])
       });
   }, []);
 
@@ -45,9 +45,8 @@ function App() {
         id: id,
         by: name,
       }),
-    }
-    ).then(() => {
-      setName(list[Math.floor(Math.random() * list.length )-1])
+    }).then(() => {
+      setName(list[Math.floor(Math.random() * list.length - 1)])
       setID((Math.floor(Math.random() * 10000).toString()))
     })
 
